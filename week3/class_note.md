@@ -78,3 +78,16 @@
     Who is already sick and pale with grief
 
 ## Making HTTP Easier With [urllib](https://docs.python.org/2/library/urllib.html)
+Turn URL as a file.
+
+    import urllib
+    fhand = urllib.urlopen('http://example.com/document.htm')
+
+    for line in fhand:
+        print line.strip()
+結果:
+
+    But soft what light through yonder window breaks
+    It is the east and Juliet is the sun
+    Arise fair sun and kill the envious moon
+    Who is already sick and pale with grief
